@@ -1,0 +1,21 @@
+<div class="bImage">
+<div class="container">
+  <h1 style="color: white;">Character details</h1>
+  <div *ngFor="let item of characterx">
+    <img [src]="getImage(item)" class="rounded-circle">
+     <div class="row cont">
+    <div class="col-6 itemName" >
+      <h1 style="color: white;">{{item.name}}</h1>
+    </div>
+    <div class="col-6">
+      <h3 style="color: white;">{{item.description}}</h3>
+    </div>
+  </div>
+  <div class="col-12">
+    <h2 style="color: white;">Creation Date</h2>
+    <h3 style="color: white;">{{item.modified}}</h3>
+  </div>
+  <button class="btn btn-danger" (click)="OnClick()">Back</button>
+ </div>
+</div>
+</div>

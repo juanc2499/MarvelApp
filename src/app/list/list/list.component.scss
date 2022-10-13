@@ -1,0 +1,41 @@
+.card-containers{
+  padding: 2px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 16px;
+
+}
+.card-small{
+  height: 100%;
+  width: 100%;
+  min-height: 350px;
+}
+.listcontainer{
+  width: 75%;
+  padding: 5px;
+}
+
+.text-center ::ng-deep .ngx-pagination .current {
+  background: red;
+}
+
+.rounded-circle{
+  height: 200px;
+  width:200px;
+  transition: 1s;
+}
+
+.rounded-circle:hover{
+  transform: scale(1.5);
+}
+
+.img-modal{
+  height: 300px;
+  width:250px;
+  transition: 1s;
+}
+.img-modal:hover{
+  transform: scale(1.5);
+}
+
