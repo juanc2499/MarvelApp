@@ -79,7 +79,6 @@ export class CharactersComponent implements OnInit {
       }
       this.characters = [];
       this.total = 0;
-
       this.searchtext$.next(searchtext);
     }
   }
@@ -94,7 +93,6 @@ export class CharactersComponent implements OnInit {
   }
 
   removeFav(item:any){
-    console.log(item)
     this.ComicsFavorites = this.ComicsFavorites.filter((x: any) => x.title !== item.title)
   }
 

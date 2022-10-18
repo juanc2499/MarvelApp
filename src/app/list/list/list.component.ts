@@ -43,12 +43,10 @@ export class ListComponent implements OnInit {
   }
 
   selectCharacter(item:any){
-    console.log(item)
     this.CharacterInfo.emit(item)
   }
 
   selectComic(comic:any){
-    console.log(comic);
     let urlcomic;
     urlcomic=comic.resourceURI;
     this.marvelService.getcomic(urlcomic,this.categoryCharacter,this.options)
@@ -90,8 +88,8 @@ export class ListComponent implements OnInit {
   }
 
   ItemFav(comics:any){
+    this.SelectFavComic=true;
     for(let i=0; i<this.ComicsFavorite.length; i++){
-      this.SelectFavComic=true;
       let item = this.ComicsFavorite[i];
        this.itemtitle = item.title ;
       if(comics.name == this.itemtitle){

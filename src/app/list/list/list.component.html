@@ -2,7 +2,7 @@
  <div class="listcontainer">
   <div class="row row-cols-md-2">
    <div  *ngFor="let item of items | paginate: { itemsPerPage: 10, currentPage: page, totalItems: 1562 }">
-    <div class="card card-containers" style="height: 363px; width: 750px">
+    <div class="card card-containers" style="height:508.54px; width:420px;">
       <div class="row">
         <div class="col-md-6">
           <img [src]="getImage(item)" class="rounded-circle">
@@ -21,17 +21,17 @@
 
             <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true" >
               <div class="modal-dialog">
-                <div class="modal-content" *ngFor="let comic of characters;" style="height:500px; width: 550px;">
+                <div class="modal-content" *ngFor="let comic of characters;" style="height:500px; width: 600px;">
                   <div class="modal-header">
                     <h5 class="modal-title" id="ModalLabel">{{comic.title}}</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                     <div class="modal-body">
                       <div class="row">
-                        <div class="col-6">
+                        <div class="col-md-6">
                           <h5>{{comic.description}}</h5>
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-6">
                           <img [src]="getImage(comic)" class="img-modal">
                         </div>
                       </div>

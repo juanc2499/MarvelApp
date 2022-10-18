@@ -1,11 +1,11 @@
 
 <app-navbar (searchEvent)="OnSearch($event)"></app-navbar>
 <div class="row ">
-  <div class="col-9" style="padding-top:10px;">
+  <div class="col-md-9" style="padding-top:10px;">
     <app-filter (filtroNameAsc)="OnFilterASC($event)" (filtroNameDes)="OnFilterASC($event)" (filtroCreationASC)="OnFilterASC($event)" (filtroCreationDES)="OnFilterASC($event)"></app-filter>
     <app-list  [items]="characters" (RemoveFav)="removeFav($event)" (ComicFav)="FavList($event)" (ChangePagination)="OffsetPag($event)" [ComicsFavorite]="ComicsFavorites"></app-list>
   </div>
-  <div class="col-2">
+  <div class="col-md-2">
    <h1 class="">My Favorites</h1>
    <div *ngFor="let item of ComicsFavorites">
    <h2>{{item?.title}}</h2>
